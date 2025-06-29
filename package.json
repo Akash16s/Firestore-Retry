@@ -1,56 +1,56 @@
 {
-  "name": "firestore-retry",
-  "version": "1.0.0",
-  "description": "A robust retry mechanism for Firebase Firestore operations with exponential backoff and configurable retry strategies",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**/*",
-    "README.md",
-    "LICENSE"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf dist",
-    "prebuild": "npm run clean",
-    "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts"
-  },
-  "keywords": [
-    "firebase",
-    "firestore",
-    "retry",
-    "exponential-backoff",
-    "batch-operations",
-    "error-handling",
-    "typescript",
-    "firebase-admin"
-  ],
-  "author": "Your Name <your.email@example.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yourusername/firestore-retry.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yourusername/firestore-retry/issues"
-  },
-  "homepage": "https://github.com/yourusername/firestore-retry#readme",
-  "peerDependencies": {
-    "firebase-admin": "^11.0.0 || ^12.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.0.0",
-    "firebase-admin": "^13.4.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.0.0"
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  }
+    "name": "firestore-retry",
+    "version": "1.0.0",
+    "description": "A robust retry mechanism for Firebase Firestore operations with exponential backoff and configurable retry strategies",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf dist",
+        "prebuild": "npm run clean",
+        "prepublishOnly": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src/**/*.ts",
+        "format": "prettier --write src/**/*.ts"
+    },
+    "keywords": [
+        "firebase",
+        "firestore",
+        "retry",
+        "exponential-backoff",
+        "batch-operations",
+        "error-handling",
+        "typescript",
+        "firebase-admin"
+    ],
+    "author": "Your Name <your.email@example.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Akash16s/firestore-retry.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Akash16s/firestore-retry/issues"
+    },
+    "homepage": "https://github.com/Akash16s/firestore-retry#readme",
+    "peerDependencies": {
+        "firebase-admin": "^11.0.0 || ^12.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "eslint": "^8.0.0",
+        "firebase-admin": "^13.4.0",
+        "prettier": "^3.0.0",
+        "typescript": "^5.0.0"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
 }
