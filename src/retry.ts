@@ -67,6 +67,16 @@ export const isRetryableFirestoreError = (error: any): boolean => {
         return true;
     }
 
+    // Cross-transaction contention errors (ABORTED)
+    if (
+        errorCode === 10 ||
+        errorMessage.includes('aborted due to cross-transaction contention') ||
+        (errorMessage.includes('aborted') &&
+            errorMessage.includes('cross-transaction'))
+    ) {
+        return true;
+    }
+
     return false;
 };
 
@@ -272,4 +282,4 @@ export const RetryConfigs = {
         baseDelay: 2000,
         maxDelay: 120000,
     },
-} as const; 
+} as const;
