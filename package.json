@@ -1,6 +1,6 @@
 {
     "name": "firestore-retry",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A robust retry mechanism for Firebase Firestore operations with exponential backoff and configurable retry strategies",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
