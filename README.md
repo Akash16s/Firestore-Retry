@@ -218,6 +218,7 @@ The library automatically detects and retries the following Firestore errors:
 - **Timeout errors** (operation timeouts)
 - **Internal server errors** (transient server issues)
 - **Resource exhausted errors** (rate limiting)
+- **Cross-transaction contention errors** (ABORTED due to concurrent transaction conflicts)
 
 Non-retryable errors (like permission denied, document not found, etc.) are immediately thrown without retry attempts.
 
@@ -234,6 +235,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Changelog
+
+### 1.0.2
+
+- Added support for cross-transaction contention errors (Error code 10 ABORTED)
+- Enhanced error detection for "aborted due to cross-transaction contention" scenarios
+- Improved handling of concurrent transaction conflicts
+
+### 1.0.1
+
+- Basic Testing
 
 ### 1.0.0
 
